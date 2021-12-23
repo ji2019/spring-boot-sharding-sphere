@@ -129,6 +129,9 @@ public class TableShardingAlgorithm implements PreciseShardingAlgorithm, RangeSh
 //        return result;
 //    }
 
+    /**
+     * 返回符合查询条件的数据库节点名称
+     */
 	@Override
 	public Collection<String> doSharding(Collection<String> availableTargetNames,
 			RangeShardingValue<Long> shardingValue) {
